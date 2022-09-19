@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.pigllet.hmusicplayer">
+    package="com.fantasicmusic.hmusicplayer">
 
     <uses-permission android:name="com.android.vending.BILLING" />
 
@@ -20,7 +20,7 @@
         android:theme="@style/NoActionBarTheme"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.fantasicmusic.hmusicplayer.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,26 +30,26 @@
         </activity>
 
         <activity
-            android:name=".musicplayer.songList.SongListActivity"
+            android:name="com.fantasicmusic.hmusicplayer.musicplayer.songList.SongListActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".musicplayer.playSong.PlaySongActivity"
+            android:name="com.fantasicmusic.hmusicplayer.musicplayer.playSong.PlaySongActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".musicplayer.iap.activities.BuyCoinActivity"
+            android:name="com.fantasicmusic.hmusicplayer.musicplayer.iap.activities.BuyCoinActivity"
             android:exported="true" />
         <activity
-            android:name=".musicplayer.iap.activities.Subscriptions"
+            android:name="com.fantasicmusic.hmusicplayer.musicplayer.iap.activities.Subscriptions"
             android:exported="true" />
         <activity
-            android:name=".musicplayer.iap.activities.IAPActivity"
+            android:name="com.fantasicmusic.hmusicplayer.musicplayer.iap.activities.IAPActivity"
             android:exported="true" />
 
         <service
-            android:name=".musicplayer.player.PlayerService"
+            android:name="com.fantasicmusic.hmusicplayer.musicplayer.player.PlayerService"
             android:enabled="true"
             android:exported="false" />
     </application>
